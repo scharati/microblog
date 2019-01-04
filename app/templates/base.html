@@ -10,10 +10,17 @@
 </head>
 
 <body>
-		<div> Microblog: <a href="/index"> Home</a></div>
-		<hr>
-		{% block content %}
-		{% endblock %}
+    <div> Microblog: <a href= {{ url_for("index") }}> Home</a> 
+    				 <a href= {{ url_for("login") }}> Login</a>
+    </div>
+    <hr>
+    {% for message in get_flashed_messages() %}
+    <ul>
+    	<li> {{ message }} </li>
+    </ul>
+    {% endfor %}
+    {% block content %}
+    {% endblock %}
 </body>
 
 </html>
