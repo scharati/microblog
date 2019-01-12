@@ -1,0 +1,108 @@
+2019-01-12 09:55:57,754 ERROR: Exception on /follow/dhriti [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 107, in follow
+    flash("You are follwing {}!".format(username=username))
+IndexError: tuple index out of range
+2019-01-12 09:56:25,530 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 09:57:57,607 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 10:01:46,968 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 10:01:58,201 ERROR: Exception on /user/scharati [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 71, in user
+    return render_template("user.html", user=user, posts=posts)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/app/templates/user.html", line 16, in template
+    {% elif not current_user.is_following(user) %}
+TemplateSyntaxError: Encountered unknown tag 'elif'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2019-01-12 10:02:37,510 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 10:54:44,072 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 10:54:48,111 ERROR: Exception on /index [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 14, in index
+    form = PostForm()
+NameError: global name 'PostForm' is not defined
+2019-01-12 10:54:54,839 ERROR: Exception on /index [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 14, in index
+    form = PostForm()
+NameError: global name 'PostForm' is not defined
+2019-01-12 10:56:31,737 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 10:56:40,190 ERROR: Exception on /index [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 15, in index
+    if form.post.validate_on_submit():
+AttributeError: 'TextAreaField' object has no attribute 'validate_on_submit'
+2019-01-12 10:57:29,746 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 

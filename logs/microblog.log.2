@@ -1,0 +1,120 @@
+2019-01-12 03:37:10,200 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 04:34:47,392 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 04:34:59,229 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 04:36:37,363 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 04:36:55,288 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 04:37:23,436 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 04:39:27,874 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 04:40:15,686 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 04:42:19,024 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 04:42:44,037 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 04:44:24,315 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 06:00:23,777 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 06:54:45,561 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 07:03:11,630 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:04:07,254 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:04:25,323 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:04:53,828 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:06:38,257 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:07:18,187 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:07:56,356 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:17:34,567 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:18:08,919 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:18:28,359 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:18:58,002 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:19:46,232 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:20:15,054 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:33:06,759 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:34:00,971 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:35:22,856 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:35:48,858 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:37:01,777 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 08:37:24,022 ERROR: Exception on /follow/dhriti [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 108, in follow
+    return redirect(url_for("user", username))
+TypeError: url_for() takes exactly 1 argument (2 given)
+2019-01-12 09:49:44,824 ERROR: Exception on /follow/dhriti [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 108, in follow
+    return redirect(url_for("user", username))
+TypeError: url_for() takes exactly 1 argument (2 given)
+2019-01-12 09:50:47,093 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 09:51:05,528 ERROR: Exception on /follow/dhriti [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 108, in follow
+    return redirect(url_for("user", username))
+TypeError: url_for() takes exactly 1 argument (2 given)
+2019-01-12 09:51:44,950 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 09:51:56,015 ERROR: Exception on /follow/dhriti [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 108, in follow
+    return redirect(url_for("user", username))
+TypeError: url_for() takes exactly 1 argument (2 given)
+2019-01-12 09:52:32,923 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 09:54:22,477 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 09:54:40,023 ERROR: Exception on /follow/dhriti [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 107, in follow
+    flash("You are follwing {}!".format(username=username))
+IndexError: tuple index out of range

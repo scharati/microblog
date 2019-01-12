@@ -1,0 +1,103 @@
+2019-01-12 10:57:40,526 ERROR: Exception on /index [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 32, in index
+    return render_template("index.html", title = "Namaste", posts = posts)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/vagrant/microblog/app/templates/base.html", line 28, in top-level template code
+    {% block content %}
+  File "/vagrant/microblog/app/templates/index.html", line 5, in block "content"
+    {{form.hidden_tag()}}
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2019-01-12 10:58:25,183 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 10:58:34,469 ERROR: Exception on /index [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 32, in index
+    return render_template("index.html", title = "Namaste", posts = posts)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/vagrant/microblog/app/templates/base.html", line 28, in top-level template code
+    {% block content %}
+  File "/vagrant/microblog/app/templates/index.html", line 5, in block "content"
+    {{form.hidden_tag()}}
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2019-01-12 10:59:48,850 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 10:59:56,325 ERROR: Exception on /index [GET] [in /vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py: 1761] 
+Traceback (most recent call last):
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/vagrant/microblog/app/routes.py", line 32, in index
+    return render_template("index.html", title = "Namaste", posts = posts)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/vagrant/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/vagrant/microblog/app/templates/base.html", line 28, in top-level template code
+    {% block content %}
+  File "/vagrant/microblog/app/templates/index.html", line 5, in block "content"
+    {{form.hidden_tag()}}
+  File "/vagrant/microblog/venv/lib/python2.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2019-01-12 11:02:51,384 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
+2019-01-12 11:06:53,318 INFO: Microblog startup [in /vagrant/microblog/app/__init__.py: 44] 
